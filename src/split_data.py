@@ -8,7 +8,6 @@ def split_data(prices, window):
     data = []
     plotting = []
     
-    #The last 15 indexes will include null values so we subtract the window size
     for index in range(len(raw) - window): 
         plotting.append(raw[index][0])
         data.append(raw[index: index + window])
