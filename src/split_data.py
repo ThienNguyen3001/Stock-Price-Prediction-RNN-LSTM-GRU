@@ -30,4 +30,4 @@ def split_data(prices, window):
     y_test = data[:test_set_size,-1,]
     y_test = scaler.fit_transform(y_test)
     
-    return [X_train, y_train, X_test, y_test, train_set_size, test_set_size]
+    return scaler,[X_train, y_train, X_test, y_test, train_set_size, test_set_size]
