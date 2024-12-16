@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-
+np.random.seed(38)
 scaler = MinMaxScaler(feature_range=(-1, 1))
 def split_data(prices, window):
     raw = prices.to_numpy()
