@@ -1,7 +1,5 @@
 import torch
 import torch.nn as nn
-from torch.utils.data import TensorDataset
-from torch.utils.data import DataLoader
 
 class RNN(nn.Module):
     def __init__(self, num_inputs, num_hiddens, num_layers, num_outputs):
