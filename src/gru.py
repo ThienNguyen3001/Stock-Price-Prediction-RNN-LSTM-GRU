@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class GRU(nn.Module):
-    def __init__(self, input_dim, hidden_dim, num_layers, output_dim):
+    def __init__(self, input_dim=1, hidden_dim=4, num_layers=1, output_dim=1):
         super(GRU, self).__init__()
         self.hidden_dim = hidden_dim
         self.num_layers = num_layers
